@@ -158,7 +158,9 @@ main{
 .btn-hero{
     left: 20px;
     font-family: var(--ff-primary);
-    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    /* text-transform: uppercase; */
     background: transparent;
     /* background: var(--clr-black); */
     color: var(--clr-black);
@@ -176,7 +178,8 @@ main{
 
 .btn-hero-2{
     font-family: var(--ff-primary);
-    text-transform: uppercase;
+    /* width: 100%; */
+    /* text-transform: uppercase; */
     background: transparent;
     color: var(--clr-black);
     letter-spacing: var(--spacing);
@@ -192,7 +195,7 @@ main{
 }
 .btn-hero-select{
     font-family: var(--ff-primary);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background: var(--clr-grey-1);
     color: var(--clr-white);
     letter-spacing: var(--spacing);
