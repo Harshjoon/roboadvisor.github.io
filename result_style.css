@@ -118,6 +118,7 @@ main{
     place-items: center;
 }
 .container{
+   align-items: center;
     text-align: center;
     justify-content: left;
     align-content: left;
@@ -139,6 +140,7 @@ main{
 
 
 .container-2{
+   align-items: center;
     text-align: center;
     padding: 2rem;
     border-radius:5px;
@@ -153,8 +155,25 @@ main{
  border-radius:5px;
  background-color: #fff;
  flex: 0 0 80%;
- margin: 5rem;
+ margin:1%;
 }
+.chat-container-2{
+ text-align: center;
+    padding: 2rem;
+    border-radius:5px;
+    background-color: #fff;
+    flex: 0 0 80%;
+    margin-bottom: 2.5rem;
+}
+.chart-container-2 h2{
+ background: var(--clr-black);
+ color: var(--clr-white);
+ padding: 1rem;
+ border-radius: var(--radius);
+ margin-bottom: 0.5rem;
+ width: 100%;
+}
+
 
 .container h2{
  background: var(--clr-black);
@@ -165,6 +184,7 @@ main{
 }
 
 .container-2 h2{
+ 
  background: var(--clr-black);
  color: var(--clr-white);
  padding: 1rem;

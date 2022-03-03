@@ -50,18 +50,18 @@ function showChart(category){
     const config = {
         type: 'doughnut',
         data: data,
-        options: {
-            plugins: {
-                legend: {
-                    labels: {
-                        // This more specific font property overrides the global property
-                        font: {
-                            size: 20
-                        }
-                    }
-                }
-            }
-        }
+        // options: {
+        //     plugins: {
+        //         legend: {
+        //             labels: {
+        //                 // This more specific font property overrides the global property
+        //                 font: {
+        //                     size: screen.width/400
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     };
     const myChart = new Chart(
         document.getElementById('myChart'),
