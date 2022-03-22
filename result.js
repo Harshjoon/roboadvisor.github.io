@@ -27,8 +27,8 @@ function displayFunds(category){
 function showChart(category){
     percentLabels = getFundsPercentageData(category)[0]
     percentData = getFundsPercentageData(category)[1]
-
-    console.log(percentLabels.length)
+    
+    console.log(percentData.join().split(','))
     colorLabels = [
         'rgb(255, 99, 132)',
         'rgb(54, 162, 235)',
@@ -50,8 +50,38 @@ function showChart(category){
     const config = {
         type: 'doughnut',
         data: data,
-        responsive: true,
-        maintainAspectRatio: true, 
+        options: {
+            scales: {
+            },
+        plugins: {
+            tooltips: {
+                enabled: false
+              },
+            datalabels: {
+              formatter: (value, ctx) => {
+                const datapoints = ctx.chart.data.datasets[0].data
+                const total = datapoints.reduce((total, datapoint) => total + datapoint, 0)
+                const percentage = value / total * 100
+                return percentage.toFixed(2) + "%";
+              },
+              color: '#fff',
+            }
+           }
+          },
+        plugins: [ChartDataLabels]
+        // plugins: {
+        //     datalabels: {
+        //       formatter: (value, ctx) => {
+        
+        //         let sum = ctx.dataset._meta[0].total;
+        //         let percentage = (value * 100 / sum).toFixed(2) + "%";
+        //         return percentage;
+        
+        
+        //       },
+        //       color: '#fff',
+        //     }
+        //   }
         // options: {
         //     plugins: {
         //         legend: {
