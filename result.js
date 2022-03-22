@@ -2,12 +2,15 @@ const resultContainer = document.getElementById('results')
 const scoreDetail = document.getElementById('score-detail')
 const category_section = document.getElementById('category')
 const fundsListSection = document.getElementById('funds-list')
+const returns = document.getElementById('return')
 
 score = localStorage.getItem('score')
 fundsData = JSON.parse(localStorage.getItem('mutualfundsdata'))
 category, index = scoreToCategory(score)
 
+console.log(fundsData[index].expectedReturn)
 
+returns.append(String(fundsData[index].expectedReturn) + '%')
 scoreDetail.append(': '+String(score))
 category_section.append('Robo Advisor recomends ' + category + ' Investing profile for you.')
 

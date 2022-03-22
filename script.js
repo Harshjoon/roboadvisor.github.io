@@ -92,7 +92,7 @@ const questions = [
         ]
     },
     {
-        question: '10. Assume you had an initial investment portfolio worth $100,000. If, due to market conditions, your portfolio fell to Rs8,50,000, would you:',
+        question: '10. Assume you had an initial investment portfolio worth Rs10,00,000. If, due to market conditions, your portfolio fell to Rs8,50,000, would you:',
         options: [
             { text: "Sell all of the investments? You do not intend to take risks.", point: 1},
             { text: "Sell a portion of your portfolio to cut your losses and reinvest into more secure investment assets?", point: 3},
