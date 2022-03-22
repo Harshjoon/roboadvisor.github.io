@@ -12,7 +12,7 @@ const questions = [
             { text: "You have few financial burdens. You are ready to accumulate wealth for future short-term and long-term goals. ", point: 6},
             { text: "You are preparing for the future by establishing a home. You may or may not have children. You are expecting to have or already have a high purchase rate of household and consumer items. ", point: 2},
             { text: "You own your own home. You have a mortgage and potentially childcare or other regular costs and maintain only small cash balances. ", point: 1},
-            { text: "You are in your peak earning years and your mortgage is under control. You work and you may or may not have children that are growing up or have left home. You may be ready to start thinking about your retirement years. ", point: 4},
+            { text: "You are in your peak earning years and your mortgage is under control. You work and you may or may not have children that are growing up or have left home. You may be ready to start thinking about your retirement years. ", point: 5},
             { text: "You are preparing for retirement. You own your home and have few financial burdens. You want to ensure you can afford a comfortable retirement.", point: 3},
             { text: "You are retired. You rely on existing funds and investments to maintain your lifestyle in retirement. You may already be receiving a government pension and/or superannuation pension. ", point: 1}
         ]
