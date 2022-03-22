@@ -50,6 +50,8 @@ function showChart(category){
     const config = {
         type: 'doughnut',
         data: data,
+        responsive: true,
+        maintainAspectRatio: true, 
         // options: {
         //     plugins: {
         //         legend: {
