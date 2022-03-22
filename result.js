@@ -137,7 +137,7 @@ function scoreToCategory(points) {
             index = 3;
             break;
         case (points > 48):
-            category = 'an Aggression';
+            category = 'an Aggressive';
             index = 4;
             break;
     }
