@@ -238,7 +238,6 @@ finishButton.addEventListener('click', () => {
     //showResults()
 })
 
-
 const qTitle = document.getElementById('question-title')
 const resultContainer = document.getElementById('results')
 const scoreDetail = document.getElementById('score-detail')
@@ -286,7 +285,7 @@ function scoreToCategory(points) {
             category = 'an Assertive';
             break;
         case (points > 48):
-            category = 'an Aggression';
+            category = 'an Aggressive';
             break;
     }
     return category
